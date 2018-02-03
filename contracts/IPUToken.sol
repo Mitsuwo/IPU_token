@@ -1,7 +1,7 @@
 pragma solidity ^0.4.18;
 import 'zeppelin-solidity/contracts/token/ERC20/StandardToken.sol';
 
-contract IPUCoin is StandardToken {
+contract IPUToken is StandardToken {
   string public name = "IPUToken";
   string public symbol = "IPUT";
   uint public decimals = 18;
@@ -9,7 +9,7 @@ contract IPUCoin is StandardToken {
   uint256 public totalSupply;
   uint public maxSupply;
 
-  function IPUCoin(uint _initialSupply, uint _maxSupply) public {
+  function IPUToken(uint _initialSupply, uint _maxSupply) public {
   	owner = msg.sender;
   	totalSupply = _initialSupply;
   	maxSupply = _maxSupply;

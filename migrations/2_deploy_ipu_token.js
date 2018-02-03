@@ -1,4 +1,4 @@
-const IPUCoin = artifacts.require('.IPUToken.sol')
+const IPUCoin = artifacts.require('./IPUToken.sol')
 
 module.exports = (deployer) => {
 	let initialSupply = 1000000e18
